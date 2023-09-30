@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+.navbar li {
+    padding: 8px;
+}
+
+.butti {
+    color: white;
+    background: #B68C5A;
+    border: none;
+}
+
+.banner {
+    background-image: url(images/banner.png);
+    height: 500px;
+    color: white;
+    padding: 100px 200px;
+}
+
+.banner h1 {
+    font-size: 72px;
+    letter-spacing: 3px;
+}
+
+.form {
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+    height: 45px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.card {
+    padding: 10px 70px;
+    border: 1px solid #E7E7E7;
+}
+
+.cards img {
+    width: 50px;
+    height: 90px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card-2 {
+    background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0.00) 100%);
+}
+
+.carousel-item h5,
+.carousel-item p,
+.scnd-img {
+    position: relative;
+    bottom: 200px;
+}
+
+.scnd-img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(83, 81, 81);
+    border-radius: 50%;
+}
+
+/* collapsible styles */
+.accordion {
+    margin-top: 100px;
+}
+
+.collapsible {
+    background-color: #F3F3F3;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+button.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+/* when button is clicked */
+button.collapsible.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.panel {
+    display: none;
+    padding: 0 18px;
+    background-color: white;
+}
+
+.card-cover {
+    margin-left: 20px;
+}
+.mini-cards{
+    flex-wrap: nowrap;
+}
+.mini-card {
+    background: var(--Dark-07, #F3F3F3);
+    border: 1px solid #CFCFCF;
+    padding-top: 50px;
+    /* width: 100px; */
+}
+.scnd-form input {
+    border: none;
+    background: var(--Dark-07, #F3F3F3);
+    padding: 20px;
+    width: 400px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+}
+#message::placeholder{
+    position: relative;
+    top: -50px;
+}
+#message {
+    height: 162px;
+}
+
+.send-msg-btn {
+    color: white;
+    background: #B68C5A;
+    border: none;
+    padding: 10px 158px;
+    border-radius: 5px;
+}
+.footer{
+    margin-top: 100px;
+    padding: 100px 100px 10px 100px;
+}
+@media screen and (max-width:576px) {
+    .banner {
+        background-size: 800px;
+        background-repeat: no-repeat;
+        /* height: 500px; */
+        color: white;
+        padding:50px 20px 0px 20px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
+    main {
+        margin-top: 0px;
+    }
+    .card {
+        padding: 10px 10px;
+        border:0;
+        background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0.00) 100%);
+    }
+    .carousel-item h5,
+    .carousel-item p,
+    .scnd-img {
+        position: static;
+        bottom: 0px;
+    }
+    .form {
+        width: 200px;
+        height: 45px;
+    }
+    .question{
+        flex-direction: column-reverse;
+    }
+    .question img{
+        width: 100%;
+    }
+    .card-cover {
+        margin:0px 30px 50px 30px;
+    }
+    .mini-cards{
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+    .scnd-form input {
+        padding: 20px;
+        width: 360px;
+        margin-bottom: 20px;
+    }
+    .send-msg-btn {
+        padding: 10px 140px;
+        border-radius: 5px;
+    }
+    .footer{
+        padding: 10px;
+    }
+    .usefull{
+        padding-top: 12px;
+    }
+}
